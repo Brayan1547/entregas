@@ -5,4 +5,4 @@ let usuario = {
     nombre,
     edad 
 };
-console.log(usuario)
+console.log(usuario);
