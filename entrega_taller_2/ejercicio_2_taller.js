@@ -1,4 +1,4 @@
-let numeros = [5, 2, 6, 8,];
+let numeros = [5, 2, 6, 8, ];
 let grande = numerosMayor(numeros)
 
 
