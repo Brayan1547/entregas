@@ -18,16 +18,31 @@ class Persona {
     }
 }
 
+let total = prompt('cuantos registros quieres hacer');
 const personas = [ ];
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < total; i++) {
     let nombre = prompt('ingresa tu nombre');
     let edad = Number(prompt('ingresa tu edad'));
     let genero = prompt('ingresa tu genero');
     
     let persona = new Persona(nombre,edad,genero)
   personas.push(persona)
+
+}
+    let contadorM = 0;
+    let contadorf = 0;
+
+    for (let i = 0; i < personas.length; i++) {
+        
+    if (personas[i].genero === 'masculino' ){
+        contadorM++;
+    }else if (personas[i].genero ==='femenino') {
+        contadorf++;
+    }
 }
 
-console.log(personas)
+console.log('hombres:', contadorM);
+console.log('mujer', contadorf);
+console.log(personas);
 
